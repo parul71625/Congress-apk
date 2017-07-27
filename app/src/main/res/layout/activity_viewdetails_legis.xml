@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/aboutMeBgColor">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_gravity="right"
+                android:layout_height="60dp">
+
+                <ImageButton
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_favorite"
+                    android:id="@+id/viewDetails_legis_FavoriteButton"
+                    android:layout_weight="0"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:onClick="viewDetailsLegisFavorite"/>
+
+                <ImageButton
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_facebook"
+                    android:id="@+id/viewDetails_legis_facebook"
+                    android:layout_weight="0"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:layout_width="55dp"
+                    android:onClick="viewDetailsFacebook" />
+
+                <ImageButton
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_twitter"
+                    android:id="@+id/viewDetails_legis_twitter"
+                    android:layout_weight="0"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:layout_width="55dp"
+                    android:onClick="viewDetailsTwitter" />
+
+                <ImageButton
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_website"
+                    android:id="@+id/viewDetails_legis_webSite"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="0"
+                    android:layout_width="52dp"
+                    android:onClick="viewDetailsWebsite" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:src="@drawable/ic_profile_image"
+                android:id="@+id/viewDetails_legis_userProfile"
+                android:adjustViewBounds="false"
+                android:layout_marginTop="0dp"
+                android:scaleType="fitCenter"
+                android:layout_weight="1"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="match_parent"
+                android:layout_height="120dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:gravity="center_vertical|center"
+                android:layout_gravity="center"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    app:srcCompat="@drawable/ic_house"
+                    android:id="@+id/viewDetails_legis_partyImage"
+                    android:layout_weight="1"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:text="Republican"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/viewDetails_legis_partyName"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    android:text="Name:"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/viewDetailheader"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/viewDetails_legis_fullName"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="18sp"
+                    android:textColor="@color/viewDetailValues"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="15dp">
+                <TextView
+                    android:text="Email:"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/viewDetailheader"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/viewDetails_legis_email"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="18sp"
+                    android:textColor="@color/viewDetailValues"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="15dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp">
+
+                <TextView
+                    android:text="Chamber:"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/viewDetailheader"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/viewDetails_legis_chamber"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="18sp"
+                    android:textColor="@color/viewDetailValues"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="15dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp">
+
+                <TextView
+                    android:text="Contact:"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/viewDetailheader"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/viewDetails_legis_contact"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="18sp"
+                    android:textColor="@color/viewDetailValues"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="15dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp">
+
+                <TextView
+                    android:text="Start Term:"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/viewDetailheader"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/viewDetails_legis_startTerm"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="18sp"
+                    android:textColor="@color/viewDetailValues"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="15dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp">
+
+                <TextView
+                    android:text="End Term:"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/viewDetailheader"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/viewDetails_legis_endTerm"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="18sp"
+                    android:textColor="@color/viewDetailValues"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="15dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp">
+
+                <TextView
+                    android:text="Term:"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/viewDetailheader"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+
+
+                <RelativeLayout
+                      android:layout_marginTop="5dp"
+                      android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight="1">
+
+                      <ProgressBar
+                          android:id="@+id/viewDetails_legis_progressBar"
+                          style="@android:style/Widget.ProgressBar.Horizontal"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:max="100"
+                          android:layout_alignParentTop="true"
+                          android:progressDrawable="@drawable/progress_bar_color"
+                          android:progress="50"/>
+
+                      <TextView
+                          android:id="@+id/viewDetails_legis_progressBar_text"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:background="@android:color/transparent"
+                          android:gravity="center"
+                          android:text="50%" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="15dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp">
+
+                <TextView
+                    android:text="Office:"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/viewDetailheader"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/viewDetails_legis_office"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="18sp"
+                    android:textColor="@color/viewDetailValues"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="15dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp">
+
+                <TextView
+                    android:text="State:"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/viewDetailheader"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/viewDetails_legis_state"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="18sp"
+                    android:textColor="@color/viewDetailValues"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="15dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp">
+
+                <TextView
+                    android:text="Fax:"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/viewDetailheader"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/viewDetails_legis_fax"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="18sp"
+                    android:textColor="@color/viewDetailValues"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="15dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp">
+
+                <TextView
+                    android:text="Birthday:"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/viewDetailheader"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/viewDetails_legis_birthday"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="18sp"
+                    android:textColor="@color/viewDetailValues"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

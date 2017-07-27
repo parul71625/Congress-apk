@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_height="match_parent"
+android:orientation="horizontal"
+tools:context="com.congress.fragment.legislator.ByStatesFragment"
+android:layout_width="match_parent"
+android:baselineAligned="false"
+android:paddingLeft="5dp">
+
+<TextView
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="No Legislator Favorites"
+    android:textSize="30dp"
+    android:textStyle="bold"
+    android:layout_centerInParent="true"
+    android:id="@+id/textViewFavoriteByLegis"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_horizontal" />
+
+    <ListView
+        android:id="@+id/listViewFavoriteByLegis"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/favoriteLegis_sideIndex"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"
+        android:background="#c3c3c3"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

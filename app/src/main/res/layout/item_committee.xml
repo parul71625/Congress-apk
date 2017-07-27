@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="7dp"
+    android:paddingBottom="7dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="15dp"
+    android:layout_width="match_parent"
+    android:background="@drawable/legis_list_bg"
+    android:layout_height="wrap_content"
+    android:onClick="listItemCommitteeClicked">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <TextView
+                android:text="HCONGRESS166-144"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/committee_id"
+                android:layout_weight="1"
+                android:textColor="@color/billItemIdColor"
+                android:textStyle="normal|bold"
+                android:textSize="18sp"
+                android:textAllCaps="true" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_arrow_right"
+                android:id="@+id/committee_viewDetailsButton"
+                android:focusable="false"
+                android:visibility="visible"
+                android:background="@null"/>
+        </LinearLayout>
+
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/billItemTitleColor"
+            android:id="@+id/committee_name"
+            android:textSize="14sp"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/billItemTitleColor"
+            android:id="@+id/committee_chamber"
+            android:textSize="14sp"
+            android:paddingTop="5dp" />
+
+    </LinearLayout>
+</RelativeLayout>

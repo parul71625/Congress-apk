@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_legislators"
+            android:icon="@drawable/ic_legislator"
+            android:title="@string/legislator_name" />
+        <item
+            android:id="@+id/nav_bills"
+            android:icon="@drawable/ic_bills"
+            android:title="@string/bill_name" />
+        <item
+            android:id="@+id/nav_committees"
+            android:icon="@drawable/ic_committee"
+            android:title="@string/committee_name" />
+        <item
+            android:id="@+id/nav_favorites"
+            android:icon="@drawable/ic_favorite"
+            android:title="@string/favorite_name" />
+    </group>
+
+    <item android:title="Other">
+        <menu>
+            <item
+                android:id="@+id/nav_aboutme"
+                android:title="@string/aboutme_name" />
+        </menu>
+    </item>
+
+</menu>

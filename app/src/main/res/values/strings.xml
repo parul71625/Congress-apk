@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Congress</string>
+    <string name="legislator_name">Legislators</string>
+    <string name="bill_name">Bills</string>
+    <string name="committee_name">Committees</string>
+    <string name="favorite_name">Favorites</string>
+    <string name="aboutme_name">About Me</string>
+    <string name="legislator_info">Legislator Info</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

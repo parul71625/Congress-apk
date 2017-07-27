@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3B3B3B</color>
+    <color name="colorPrimaryDark">#3B3B3B</color>
+    <color name="colorAccent">#3B3B3B</color>
+    <color name="navBarColor">#D9D9D9</color>
+    <color name="aboutMeBgColor">#D9D9D9</color>
+    <color name="aboutMeTextColor">#000000</color>
+    <color name="navBarTextColor">#3B3B3B</color>
+    <color name="legisItemStateColor">#3A3A3A</color>
+    <color name="legisItemNameColor">#000000</color>
+    <color name="billItemIdColor">#000000</color>
+    <color name="billItemTitleColor">#3A3A3A</color>
+    <color name="billItemIntroducedOnColor">#3A3A3A</color>
+    <color name="viewDetailheader">#000000</color>
+    <color name="viewDetailValues">#737373</color>
+</resources>

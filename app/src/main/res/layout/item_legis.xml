@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="0dp"
+    android:layout_width="match_parent"
+    android:background="@drawable/legis_list_bg"
+    android:layout_height="80dp"
+    android:onClick="listItemLegisClicked">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleSmall"
+                android:id="@+id/userProfileProgressBar"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_height="35dp" />
+
+            <ImageView
+                android:layout_height="match_parent"
+                android:id="@+id/userProfileImage"
+                android:cropToPadding="false"
+                android:adjustViewBounds="false"
+                android:layout_width="match_parent"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"
+                android:visibility="gone"
+                android:src="@drawable/ic_profile_image"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp">
+
+            <TextView
+                android:text="Murkowski, Lisa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/legis_username"
+                android:textColor="@color/legisItemNameColor"
+                android:textStyle="normal|bold"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/legis_stateinfo"
+                android:paddingTop="5dp"
+                android:textColor="@color/legisItemStateColor"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_arrow_right"
+            android:id="@+id/legis_viewDetailsButton"
+            android:focusable="false"
+            android:background="@drawable/legis_list_bg"
+            android:layout_weight="0.36"
+            android:visibility="visible"/>
+    </LinearLayout>
+</RelativeLayout>
