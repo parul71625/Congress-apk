@@ -1,2 +1,2 @@
-# Congress-apk
-Android app for Congress Sunlight Foundation API
+# Congress Api Android
+Designed a android application for the Congress Search using the Sunlinght Foundation Api
